@@ -1,0 +1,27 @@
+{
+  "name": "next",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": ".",
+  "main": "index.js",
+  "dependencies": {
+    "@material-ui/core": "^4.3.1",
+    "axios": "^0.19.0",
+    "next": "^9.0.3",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "styled-components": "^4.3.2"
+  },
+  "devDependencies": {
+    "babel-plugin-styled-components": "^1.10.6"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+	"export": "next export"
+  },
+  "author": "Povolnov",
+  "license": "ISC"
+}
