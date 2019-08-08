@@ -6,5 +6,5 @@ module.exports = {
       '/': { page: '/' }
     };
   },
-  assetPrefix: !debug ? 'https://knlnt.github.io/dotaAPI/' : '',
+  assetPrefix: !debug ? 'https://knlnt.github.io/dotaAPI/out/' : '',
 };
