@@ -2,7 +2,7 @@
   "name": "next",
   "version": "1.0.0",
   "description": "",
-  "homepage": ".",
+  "homepage": "https://knlnt.github.io/dotaAPI/out/",
   "main": "index.js",
   "dependencies": {
     "@material-ui/core": "^4.3.1",
