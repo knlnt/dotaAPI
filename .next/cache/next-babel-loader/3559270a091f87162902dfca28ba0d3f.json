@@ -1,0 +1,1 @@
+{"ast":null,"code":"export const DEFAULT_ID_HERO = 1;\nexport const BASE_URL = \"https://api.opendota.com/api/\";\nexport const NO_AVATAR = \"https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/fe/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb.jpg\";","map":null,"metadata":{},"sourceType":"module"}

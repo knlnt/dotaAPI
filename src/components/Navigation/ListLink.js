@@ -3,7 +3,7 @@ import Link from "next/link";
 import { ListItem, ListItemIcon, ListItemText, Icon } from "@material-ui/core";
 
 const ListLink = ({ name, link, icon }) => (
-  <Link href={link} as={`/dotaAPI/out${link}`}>
+  <Link href={link}>
     <ListItem button>
       <ListItemIcon>
         <Icon>{icon}</Icon>

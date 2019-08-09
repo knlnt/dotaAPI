@@ -5,14 +5,16 @@
       "multi private-next-pages/_app.js": 1,
       "multi private-next-pages/_document.js": 2,
       "multi private-next-pages/index.js": 3,
-      "multi next/dist/pages/_error": 4
+      "multi next/dist/pages/_error": 4,
+      "multi private-next-pages/player.js": 5
     },
     "usedIds": {
       "0": 0,
       "1": 1,
       "2": 2,
       "3": 3,
-      "4": 4
+      "4": 4,
+      "5": 5
     }
   },
   "chunks": {
@@ -86,15 +88,22 @@
       "static\\dSIuEvVDaShpjdZYicKb4\\pages\\_app.js": 6,
       "static\\dSIuEvVDaShpjdZYicKb4\\pages\\_document.js": 7,
       "static\\dSIuEvVDaShpjdZYicKb4\\pages\\_error.js": 8,
-      "static\\dSIuEvVDaShpjdZYicKb4\\pages\\index.js": 9
+      "static\\dSIuEvVDaShpjdZYicKb4\\pages\\index.js": 9,
+      "static\\4bvYYgK6YdENBg9JX2mRa\\pages\\Page2.js": 0,
+      "static\\4bvYYgK6YdENBg9JX2mRa\\pages\\_app.js": 1,
+      "static\\4bvYYgK6YdENBg9JX2mRa\\pages\\_document.js": 2,
+      "static\\4bvYYgK6YdENBg9JX2mRa\\pages\\_error.js": 3,
+      "static\\4bvYYgK6YdENBg9JX2mRa\\pages\\index.js": 4,
+      "static\\4bvYYgK6YdENBg9JX2mRa\\pages\\player.js": 10
     },
     "bySource": {},
     "usedIds": [
-      5,
-      6,
-      7,
-      8,
-      9
+      0,
+      1,
+      10,
+      2,
+      3,
+      4
     ]
   }
 }
