@@ -3,7 +3,7 @@ const debug = process.env.NODE_ENV !== "production";
 module.exports = {
   exportPathMap: function() {
     return {
-      '/': { page: '/' }
+      '/dotaAPI/out/': { page: '/' }
     };
   },
   assetPrefix: !debug ? 'https://knlnt.github.io/dotaAPI/out/' : '',
