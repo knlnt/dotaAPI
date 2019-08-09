@@ -3,7 +3,7 @@ import Link from "next/link";
 import { ListItem, ListItemIcon, ListItemText, Icon } from "@material-ui/core";
 
 const ListLink = ({ name, link, icon }) => (
-  <Link href={link} as={`${process.env.ASSET_PREFIX}`+link}>
+  <Link href={link} as={`${process.env.ASSET_PREFIX}${link}`}>
     <ListItem button>
       <ListItemIcon>
         <Icon>{icon}</Icon>
