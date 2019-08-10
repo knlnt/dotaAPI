@@ -1,0 +1,1 @@
+{"ast":null,"code":"import React from \"react\";\nimport { Grid, CircularProgress } from \"@material-ui/core\";\n\nconst Loader = () => React.createElement(Grid, {\n  container: true,\n  justify: \"center\",\n  alignItems: \"center\"\n}, React.createElement(CircularProgress, null));\n\nexport default Loader;","map":null,"metadata":{},"sourceType":"module"}
