@@ -100,16 +100,22 @@
       "static\\RnYj-GD6bQQQSjv7eO6LB\\pages\\_document.js": 7,
       "static\\RnYj-GD6bQQQSjv7eO6LB\\pages\\_error.js": 8,
       "static\\RnYj-GD6bQQQSjv7eO6LB\\pages\\index.js": 9,
-      "static\\RnYj-GD6bQQQSjv7eO6LB\\pages\\player.js": 11
+      "static\\RnYj-GD6bQQQSjv7eO6LB\\pages\\player.js": 11,
+      "static\\lq_sQ_r-7wA8V55nPFlkF\\pages\\Page2.js": 0,
+      "static\\lq_sQ_r-7wA8V55nPFlkF\\pages\\_app.js": 1,
+      "static\\lq_sQ_r-7wA8V55nPFlkF\\pages\\_document.js": 2,
+      "static\\lq_sQ_r-7wA8V55nPFlkF\\pages\\_error.js": 3,
+      "static\\lq_sQ_r-7wA8V55nPFlkF\\pages\\index.js": 4,
+      "static\\lq_sQ_r-7wA8V55nPFlkF\\pages\\player.js": 10
     },
     "bySource": {},
     "usedIds": [
-      11,
-      5,
-      6,
-      7,
-      8,
-      9
+      0,
+      1,
+      10,
+      2,
+      3,
+      4
     ]
   }
 }
