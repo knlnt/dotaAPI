@@ -1,59 +1,38 @@
-import { Component } from "react";
+import { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 
 import SortSelection from "./SortSelection";
 import HeroesList from "./HeroesList";
 import withAPIRequest from "../WithAPIRequest/WithAPIRequest";
 
-class HeroesSelect extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      heroes: props.data,
-      sortByName: true
-    };
-  }
+const HeroesSelect = ({ data, updateCurrentHero }) => {
+  const [sortByName, setSortByName] = useState(true);
 
-  componentDidMount() {
-    this.sortHeroesList();
-  }
+  useEffect(() => {
+    sortHeroesList();
+  }, [sortByName]);
 
-  render() {
-    const { sortByName, heroes } = this.state;
-    const { updateCurrentHero } = this.props;
-    return (
-      <div>
-        <SortSelection sortByName={sortByName} onChange={this.toggleSortType} />
-        <HeroesList updateCurrentHero={updateCurrentHero} heroes={heroes} />
-      </div>
-    );
-  }
-  sortHeroesList = () => {
-    const { sortByName } = this.state;
-    this.setState(prevState => ({
-      heroes: prevState.heroes.sort((first, second) => {
-        return sortByName
-          ? first.localized_name.toLowerCase() >
-            second.localized_name.toLowerCase()
-            ? 1
-            : -1
-          : first.roles[0].toLowerCase() > second.roles[0].toLowerCase()
+  const sortHeroesList = () => {
+    data.sort((first, second) => {
+      return sortByName
+        ? first.localized_name.toLowerCase() >
+          second.localized_name.toLowerCase()
           ? 1
-          : -1;
-      })
-    }));
+          : -1
+        : first.roles[0].toLowerCase() > second.roles[0].toLowerCase()
+        ? 1
+        : -1;
+    });
   };
-  toggleSortType = () => {
-    this.setState(
-      prevState => ({
-        sortByName: !prevState.sortByName
-      }),
-      () => {
-        this.sortHeroesList();
-      }
-    );
-  };
-}
+  const toggleSortType = () => setSortByName(!sortByName);
+
+  return (
+    <div>
+      <SortSelection sortByName={sortByName} onChange={toggleSortType} />
+      <HeroesList updateCurrentHero={updateCurrentHero} heroes={data} />
+    </div>
+  );
+};
 
 HeroesSelect.propTypes = {
   updateCurrentHero: PropTypes.func.isRequired,
